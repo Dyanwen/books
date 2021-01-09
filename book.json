@@ -1,7 +1,10 @@
     {
         "author": "deng.yanwen",
-        "title": "Sample GitBook",
-        "description": "",
+        "title": "GitBook",
+        "description": "This is a sample book created by gitbook",
+        "extension": null,
+        "generator": "site",
+        "isbn": null,
         "links": {
             "sharing": {
                 "all": null,
@@ -9,10 +12,28 @@
                 "google": null,
                 "twitter": null,
                 "weibo": null
+            },
+            "sidebar": {
+                "晨希": ""
             }
+        },
+        "output": null,
+        "pdf": {
+            "fontSize": 12,
+            "footerTemplate": null,
+            "headerTemplate": null,
+            "margin": {
+                "bottom": 36,
+                "left": 62,
+                "right": 62,
+                "top": 36
+            },
+            "pageNumbers": false,
+            "paperSize": "a4"
         },
         "plugins": [
             "expandable-chapters",
             "multipart"
-        ]
+        ],
+        "variables": {}
     }
