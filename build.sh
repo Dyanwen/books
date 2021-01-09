@@ -13,7 +13,7 @@ echo “克隆完成”
 gitbook build ./ 
 echo "构建成功"
 
-mv _book/* book_end
+mv _book/* book_end/
 rm -rf _book
 cd book_end
 
