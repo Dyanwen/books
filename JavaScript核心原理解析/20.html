@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>01 | delete 0：JavaScript中到底有什么是可以销毁的 · GitBook</title>
+        <title>20 | (0, eval)("x = 100") ：一行让严格模式形同虚设的破坏性设计（上） · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -65,10 +65,10 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="02.html" />
+    <link rel="next" href="21.html" />
     
     
-    <link rel="prev" href="00.html" />
+    <link rel="prev" href="19.html" />
     
 
     </head>
@@ -146,7 +146,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.2.2" data-path="01.html">
+        <li class="chapter " data-level="1.2.2" data-path="01.html">
             
                 <a href="01.html">
             
@@ -393,7 +393,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.21" data-path="20.html">
+        <li class="chapter active" data-level="1.2.21" data-path="20.html">
             
                 <a href="20.html">
             
@@ -785,7 +785,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >01 | delete 0：JavaScript中到底有什么是可以销毁的</a>
+        <a href=".." >20 | (0, eval)("x = 100") ：一行让严格模式形同虚设的破坏性设计（上）</a>
     </h1>
 </div>
 
@@ -800,7 +800,7 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="01--delete-0&#xFF1A;javascript&#x4E2D;&#x5230;&#x5E95;&#x6709;&#x4EC0;&#x4E48;&#x662F;&#x53EF;&#x4EE5;&#x9500;&#x6BC1;&#x7684;">01 | delete 0&#xFF1A;JavaScript&#x4E2D;&#x5230;&#x5E95;&#x6709;&#x4EC0;&#x4E48;&#x662F;&#x53EF;&#x4EE5;&#x9500;&#x6BC1;&#x7684;</h1>
+                                <h1 id="20--0-evalx--100-&#xFF1A;&#x4E00;&#x884C;&#x8BA9;&#x4E25;&#x683C;&#x6A21;&#x5F0F;&#x5F62;&#x540C;&#x865A;&#x8BBE;&#x7684;&#x7834;&#x574F;&#x6027;&#x8BBE;&#x8BA1;&#xFF08;&#x4E0A;&#xFF09;">20 | (0, eval)(&quot;x = 100&quot;) &#xFF1A;&#x4E00;&#x884C;&#x8BA9;&#x4E25;&#x683C;&#x6A21;&#x5F0F;&#x5F62;&#x540C;&#x865A;&#x8BBE;&#x7684;&#x7834;&#x574F;&#x6027;&#x8BBE;&#x8BA1;&#xFF08;&#x4E0A;&#xFF09;</h1>
 
                                 
                                 </section>
@@ -828,12 +828,12 @@
 
             
                 
-                <a href="00.html" class="navigation navigation-prev " aria-label="Previous page: 开篇词 | 如何解决语言问题？">
+                <a href="19.html" class="navigation navigation-prev " aria-label="Previous page: 19 | a + b：动态类型是灾难之源还是最好的特性？（下）">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="02.html" class="navigation navigation-next " aria-label="Next page: 02 | var x = y = 100：声明语句与语法改变了JavaScript语言核心性质">
+                <a href="21.html" class="navigation navigation-next " aria-label="Next page: 21 | (0, eval)("x = 100") ：一行让严格模式形同虚设的破坏性设计（下）">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -844,7 +844,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"01 | delete 0：JavaScript中到底有什么是可以销毁的","level":"1.2.2","depth":2,"next":{"title":"02 | var x = y = 100：声明语句与语法改变了JavaScript语言核心性质","level":"1.2.3","depth":2,"path":"JavaScript核心原理解析/02.md","ref":"JavaScript核心原理解析/02.md","articles":[]},"previous":{"title":"开篇词 | 如何解决语言问题？","level":"1.2.1","depth":2,"path":"JavaScript核心原理解析/00.md","ref":"JavaScript核心原理解析/00.md","articles":[]},"dir":"ltr"},"config":{"plugins":["expandable-chapters","multipart"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"expandable-chapters":{},"multipart":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"deng.yanwen","pdf":{"pageBreaksBefore":"/","headerTemplate":null,"paperSize":"a4","margin":{"right":62,"left":62,"top":36,"bottom":36},"fontSize":12,"fontFamily":"Arial","footerTemplate":null,"chapterMark":"pagebreak","pageNumbers":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"GitBook","links":{"sharing":{"all":null,"facebook":null,"google":null,"twitter":null,"weibo":null},"sidebar":{"晨希":""}},"gitbook":"*","description":"This is a sample book created by gitbook"},"file":{"path":"JavaScript核心原理解析/01.md","mtime":"2021-01-09T04:02:45.231Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-01-09T17:52:57.335Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"20 | (0, eval)(\"x = 100\") ：一行让严格模式形同虚设的破坏性设计（上）","level":"1.2.21","depth":2,"next":{"title":"21 | (0, eval)(\"x = 100\") ：一行让严格模式形同虚设的破坏性设计（下）","level":"1.2.22","depth":2,"path":"JavaScript核心原理解析/21.md","ref":"JavaScript核心原理解析/21.md","articles":[]},"previous":{"title":"19 | a + b：动态类型是灾难之源还是最好的特性？（下）","level":"1.2.20","depth":2,"path":"JavaScript核心原理解析/19.md","ref":"JavaScript核心原理解析/19.md","articles":[]},"dir":"ltr"},"config":{"plugins":["expandable-chapters","multipart"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"expandable-chapters":{},"multipart":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"deng.yanwen","pdf":{"pageBreaksBefore":"/","headerTemplate":null,"paperSize":"a4","margin":{"right":62,"left":62,"top":36,"bottom":36},"fontSize":12,"fontFamily":"Arial","footerTemplate":null,"chapterMark":"pagebreak","pageNumbers":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"GitBook","links":{"sharing":{"all":null,"facebook":null,"google":null,"twitter":null,"weibo":null},"sidebar":{"晨希":""}},"gitbook":"*","description":"This is a sample book created by gitbook"},"file":{"path":"JavaScript核心原理解析/20.md","mtime":"2021-01-09T17:52:02.078Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-01-09T17:52:57.335Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
