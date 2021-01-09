@@ -4,12 +4,13 @@ git add .
 git commit -m $1
 git push
 
-gitbook build ./ 
+echo "提交完成"
 
+rm -rf ../book_end/*
+gitbook build ./ ../book_end
+
+echo "构建成功"
 cd ../book_end
-
-rm -rf *
-cp -r ../books/_book/ ./ 
 
 git add .
 git commit -m $1 
