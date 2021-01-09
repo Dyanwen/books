@@ -1,0 +1,18 @@
+    {
+        "author": "deng.yanwen",
+        "title": "Sample GitBook",
+        "description": "",
+        "links": {
+            "sharing": {
+                "all": null,
+                "facebook": null,
+                "google": null,
+                "twitter": null,
+                "weibo": null
+            }
+        },
+        "plugins": [
+            "expandable-chapters",
+            "multipart"
+        ]
+    }
