@@ -2,9 +2,7 @@
         "author": "deng.yanwen",
         "title": "GitBook",
         "description": "This is a sample book created by gitbook",
-        "extension": null,
         "generator": "site",
-        "isbn": null,
         "links": {
             "sharing": {
                 "all": null,
@@ -17,7 +15,6 @@
                 "晨希": ""
             }
         },
-        "output": null,
         "pdf": {
             "fontSize": 12,
             "footerTemplate": null,
