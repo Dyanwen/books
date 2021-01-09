@@ -1,0 +1,26 @@
+{
+  "name": "books",
+  "version": "1.0.0",
+  "description": "[ ] [JavaScript核心原理解析](JavaScript核心原理解析/README.md)",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dyanwen/books.git"
+  },
+  "author": "deng.yanwen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Dyanwen/books/issues"
+  },
+  "homepage": "https://github.com/Dyanwen/books#readme",
+  "devDependencies": {
+    "del": "^6.0.0",
+    "exec": "^0.2.1",
+    "glob": "^7.1.6",
+    "gulp": "^4.0.2",
+    "gulp-git": "^2.10.1"
+  }
+}
