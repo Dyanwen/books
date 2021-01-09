@@ -1,4 +1,4 @@
-# 极客时间 - 前端开发
+#  - 前端开发手册
 
 [ ] [JavaScript核心原理解析](JavaScript核心原理解析/README.md)
 
