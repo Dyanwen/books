@@ -1,36 +1,118 @@
-    {
-        "author": "deng.yanwen",
-        "title": "GitBook",
-        "description": "This is a sample book created by gitbook",
-        "generator": "site",
-        "links": {
-            "sharing": {
-                "all": null,
-                "facebook": null,
-                "google": null,
-                "twitter": null,
-                "weibo": null
-            },
-            "sidebar": {
-                "晨希": ""
+{
+    "author": "deng.yanwen",
+    "title": "GitBook",
+    "description": "This is record sharing by deng.yanwen",
+    "extension": null,
+    "generator": "site",
+    "isbn": "",
+    "links": {
+        "sharing": {
+            "all": null,
+            "facebook": null,
+            "google": null,
+            "twitter": null,
+            "weibo": null
+        },
+        "sidebar": {
+            "谷歌": "https://www.google.com"
+        }
+    },
+    "output": null,
+    "pdf": {
+        "fontSize": 12,
+        "footerTemplate": null,
+        "headerTemplate": null,
+        "margin": {
+            "bottom": 36,
+            "left": 62,
+            "right": 62,
+            "top": 36
+        },
+        "pageNumbers": true,
+        "paperSize": "a4"
+    },
+    "plugins": [
+        "page-treeview",
+        "favicon",
+        "expandable-chapters",
+        "hide-element",
+        "code",
+        "back-to-top-button",
+        "chapter-fold",
+        "splitter",
+        "-lunr",
+        "-search",
+        "search-pro",
+        "insert-logo",
+        "pageview-count",
+        "tbfed-pagefooter",
+        "popup",
+        "-sharing",
+        "sharing-plus",
+        "multipart"
+    ],
+    "pluginsConfig": {
+        "insert-logo": {
+            "url": "https://lh3.googleusercontent.com/a-/AOh14GiYt6d7cl1R6_ftyLEdumKc_jDqrG_SluYu4OqQ=s192-c-rg-br100",
+            "style": "background: none;width: 50px;height: 50px;border-radius: 100%;"
+        },
+        "hide-element": {
+            "elements": [
+                ".gitbook-link"
+            ]
+        },
+        "tbfed-pagefooter": {
+            "copyright": "Copyright © 晨希 2021",
+            "modify_label": "该文章修订时间：",
+            "modify_format": "YYYY-MM-DD HH:mm:ss"
+        },
+        "favicon": {
+            "shortcut": "assets/favicon.ico",
+            "bookmark": "assets/favicon.ico",
+            "appleTouch": "assets/favicon.ico",
+            "appleTouchMore": {
+                "120x120": "assets/favicon.ico",
+                "180x180": "assets/favicon.ico"
             }
         },
-        "pdf": {
-            "fontSize": 12,
-            "footerTemplate": null,
-            "headerTemplate": null,
-            "margin": {
-                "bottom": 36,
-                "left": 62,
-                "right": 62,
-                "top": 36
-            },
-            "pageNumbers": false,
-            "paperSize": "a4"
+        "fontsettings": {
+            "theme": "white",
+            "family": "sans",
+            "size": 2
         },
-        "plugins": [
-            "expandable-chapters",
-            "multipart"
-        ],
-        "variables": {}
+        "page-treeview": {
+            "copyright": "Copyright © 晨希 2021",
+            "minHeaderCount": "2",
+            "minHeaderDeep": "2"
+        },
+        "sharing": {
+            "douban": true,
+            "facebook": true,
+            "google": true,
+            "pocket": true,
+            "qq": true,
+            "qzone": true,
+            "twitter": true,
+            "weibo": true,
+            "all": [
+                "douban",
+                "facebook",
+                "google",
+                "instapaper",
+                "linkedin",
+                "twitter",
+                "weibo",
+                "messenger",
+                "qq",
+                "qzone",
+                "viber",
+                "whatsapp"
+            ]
+        }
+    },
+    "language": "zh-hans",
+    "variables": {},
+    "styles": {
+        "website": "assets/styles/website.css"
     }
+}
