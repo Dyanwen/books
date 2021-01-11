@@ -32,8 +32,8 @@
         "paperSize": "a4"
     },
     "plugins": [
-        "page-treeview",
         "favicon",
+        "github",
         "expandable-chapters",
         "hide-element",
         "code",
@@ -49,9 +49,19 @@
         "popup",
         "-sharing",
         "sharing-plus",
-        "multipart"
+        "multipart",
+        "page-toc-button",
+        "ancre-navigation",
+        "alerts"
     ],
     "pluginsConfig": {
+        "github": {
+            "url": "https://github.com/Dyanwen"
+        },
+        "page-toc-button": {
+            "maxTocDepth": 2,
+            "minTocSize": 2
+        },
         "insert-logo": {
             "url": "https://lh3.googleusercontent.com/a-/AOh14GiYt6d7cl1R6_ftyLEdumKc_jDqrG_SluYu4OqQ=s192-c-rg-br100",
             "style": "background: none;width: 50px;height: 50px;border-radius: 100%;"
@@ -79,11 +89,6 @@
             "theme": "white",
             "family": "sans",
             "size": 2
-        },
-        "page-treeview": {
-            "copyright": "Copyright © 晨希 2021",
-            "minHeaderCount": "2",
-            "minHeaderDeep": "2"
         },
         "sharing": {
             "douban": true,
