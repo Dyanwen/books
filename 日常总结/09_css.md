@@ -1,14 +1,3 @@
-# css
-
-## 伪类和伪元素的区别
-
-- 伪类用于向某些选择器添加特殊效果
-
-  - :active :focus :hover :visited :first-child 等等
-
-- 伪元素用来将特殊的效果添加到某些选择器
-  - :before :after :first-letter :first-line ::selection
-
 ## 怎么实现元素的水平垂直居中
 
 ```css
