@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>接口测试 · GitBook</title>
+        <title>XSS&&CSRF · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -98,10 +98,8 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="01_伪类&&伪元素.html" />
     
-    
-    <link rel="prev" href="./" />
+    <link rel="prev" href="11_性能优化.html" />
     
 
     
@@ -559,9 +557,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter active" data-level="2.3.1" data-path="00.html">
+        <li class="chapter " data-level="2.3.1" data-path="00_接口测试.html">
             
-                <a href="00.html">
+                <a href="00_接口测试.html">
             
                     
                     接口测试
@@ -702,6 +700,32 @@
             
         </li>
     
+        <li class="chapter " data-level="2.3.12" data-path="11_性能优化.html">
+            
+                <a href="11_性能优化.html">
+            
+                    
+                    性能优化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="2.3.13" data-path="12_XSS&&CSRF.html">
+            
+                <a href="12_XSS&&CSRF.html">
+            
+                    
+                    XSS&&CSRF
+            
+                </a>
+            
+
+            
+        </li>
+    
 
             </ul>
             
@@ -737,7 +761,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >接口测试</a>
+        <a href=".." >XSS&&CSRF</a>
     </h1>
 </div>
 
@@ -752,16 +776,11 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="&#x63A5;&#x53E3;&#x6D4B;&#x8BD5;"><a name="&#x63A5;&#x53E3;&#x6D4B;&#x8BD5;" class="anchor-navigation-ex-anchor" href="#&#x63A5;&#x53E3;&#x6D4B;&#x8BD5;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x63A5;&#x53E3;&#x6D4B;&#x8BD5;</h1>
-<blockquote>
-<ol>
-<li>&#x63A5;&#x53E3;&#x6D4B;&#x8BD5;&#x662F;&#x901A;&#x8FC7;&#x8BBE;&#x8BA1;&#x8F93;&#x5165;&#x548C;&#x9884;&#x671F;&#x8F93;&#x51FA;&#x6765;&#x5B8C;&#x6210;&#x6D4B;&#x8BD5;&#x9A8C;&#x8BC1;&#x7684;</li>
-<li>&#x63A5;&#x53E3;&#x6D4B;&#x8BD5;&#x662F;&#x4E00;&#x4E2A;&#x6280;&#x672F;&#x77E5;&#x8BC6;&#x548C;&#x4E1A;&#x52A1;&#x77E5;&#x8BC6;&#x76F8;&#x7ED3;&#x5408;&#x7684;&#x5DE5;&#x4F5C;,&#x53EF;&#x4EE5;&#x66F4;&#x597D;&#x5730;&#x63D0;&#x5347;&#x4F60;&#x81EA;&#x5DF1;&#x7684;&#x6280;&#x672F;&#x5B9E;&#x529B;</li>
-<li>&#x63A5;&#x53E3;&#x6D4B;&#x8BD5;&#x4E5F;&#x662F;&#x529F;&#x80FD;&#x6D4B;&#x8BD5;&#xFF0C;&#x8981;&#x8BF4;&#x6709;&#x548C;&#x754C;&#x9762;&#x6D4B;&#x8BD5;&#x4E0D;&#x540C;&#x7684;&#x5730;&#x65B9;&#xFF0C;&#x4EC5;&#x4EC5;&#x662F;&#x548C;&#x6211;&#x4EEC;&#x4EA4;&#x4E92;&#x7684;&#xFF0C;&#x4E0D;&#x518D;&#x662F;&#x5F00;&#x53D1;&#x5DE5;&#x7A0B;&#x5E08;&#x8BBE;&#x8BA1;&#x7684;&#x754C;&#x9762;&#xFF0C;&#x800C;&#x662F;&#x6D4B;&#x8BD5;&#x5DE5;&#x5177;&#x6216;&#x8005;&#x4EE3;&#x7801;</li>
-</ol>
-</blockquote>
+                                <h1 id="&#x7F51;&#x7EDC;&#x5B89;&#x5168;csrfxss&#x662F;&#x4EC0;&#x4E48;&#x5982;&#x4F55;&#x9884;&#x9632;"><a name="&#x7F51;&#x7EDC;&#x5B89;&#x5168;csrfxss&#x662F;&#x4EC0;&#x4E48;&#x5982;&#x4F55;&#x9884;&#x9632;" class="anchor-navigation-ex-anchor" href="#&#x7F51;&#x7EDC;&#x5B89;&#x5168;csrfxss&#x662F;&#x4EC0;&#x4E48;&#x5982;&#x4F55;&#x9884;&#x9632;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x7F51;&#x7EDC;&#x5B89;&#x5168;csrf,xss&#x662F;&#x4EC0;&#x4E48;,&#x5982;&#x4F55;&#x9884;&#x9632;</h1>
+<h2 id="xss"><a name="xss" class="anchor-navigation-ex-anchor" href="#xss"><i class="fa fa-link" aria-hidden="true"></i></a>XSS</h2>
+<h2 id="csrf"><a name="csrf" class="anchor-navigation-ex-anchor" href="#csrf"><i class="fa fa-link" aria-hidden="true"></i></a>CSRF</h2>
 <footer class="page-footer"><span class="copyright">Copyright &#xA9; &#x6668;&#x5E0C; 2021 all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x8BE5;&#x6587;&#x7AE0;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
-2021-01-11 11:17:48
+2021-02-01 10:41:24
 </span></footer>
 <script>console.log("plugin-popup....");document.onclick = function(e){ e.target.tagName === "IMG" && window.open(e.target.src,e.target.src)}</script><style>img{cursor:pointer}</style>
                                 
@@ -790,14 +809,10 @@
 
             
                 
-                <a href="./" class="navigation navigation-prev " aria-label="Previous page: 日常总结">
+                <a href="11_性能优化.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 性能优化">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
-                
-                <a href="01_伪类&&伪元素.html" class="navigation navigation-next " aria-label="Next page: 伪类&&伪元素">
-                    <i class="fa fa-angle-right"></i>
-                </a>
                 
             
         
@@ -806,7 +821,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"接口测试","level":"2.3.1","depth":2,"next":{"title":"伪类&&伪元素","level":"2.3.2","depth":2,"path":"日常总结/01_伪类&&伪元素.md","ref":"日常总结/01_伪类&&伪元素.md","articles":[]},"previous":{"title":"日常总结","level":"2.3","depth":1,"path":"日常总结/README.md","ref":"日常总结/README.md","articles":[{"title":"接口测试","level":"2.3.1","depth":2,"path":"日常总结/00.md","ref":"日常总结/00.md","articles":[]},{"title":"伪类&&伪元素","level":"2.3.2","depth":2,"path":"日常总结/01_伪类&&伪元素.md","ref":"日常总结/01_伪类&&伪元素.md","articles":[]},{"title":"css单位总结","level":"2.3.3","depth":2,"path":"日常总结/02_css单位总结.md","ref":"日常总结/02_css单位总结.md","articles":[]},{"title":"面向对象继承精讲","level":"2.3.4","depth":2,"path":"日常总结/03_面向对象继承精讲.md","ref":"日常总结/03_面向对象继承精讲.md","articles":[]},{"title":"[]==![]","level":"2.3.5","depth":2,"path":"日常总结/04_[]==![].md","ref":"日常总结/04_[]==![].md","articles":[]},{"title":"面试小册子","level":"2.3.6","depth":2,"path":"日常总结/05_面试小册子.md","ref":"日常总结/05_面试小册子.md","articles":[]},{"title":"position","level":"2.3.7","depth":2,"path":"日常总结/06_position.md","ref":"日常总结/06_position.md","articles":[]},{"title":"BFC","level":"2.3.8","depth":2,"path":"日常总结/07_BFC.md","ref":"日常总结/07_BFC.md","articles":[]},{"title":"如何清除浮动","level":"2.3.9","depth":2,"path":"日常总结/08_如何清除浮动.md","ref":"日常总结/08_如何清除浮动.md","articles":[]},{"title":"css垂直水平居中","level":"2.3.10","depth":2,"path":"日常总结/09_css垂直水平居中.md","ref":"日常总结/09_css垂直水平居中.md","articles":[]},{"title":"缓存","level":"2.3.11","depth":2,"path":"日常总结/10_缓存.md","ref":"日常总结/10_缓存.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["favicon","github","expandable-chapters","hide-element","code","back-to-top-button","chapter-fold","splitter","-lunr","-search","search-pro","insert-logo","pageview-count","tbfed-pagefooter","popup","-sharing","sharing-plus","multipart","page-toc-button","ancre-navigation","alerts"],"styles":{"website":"assets/styles/website.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright © 晨希 2021","modify_label":"该文章修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"chapter-fold":{},"github":{"url":"https://github.com/Dyanwen"},"splitter":{},"search-pro":{},"sharing-plus":{"qq":false,"all":["facebook","google","twitter","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":true,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"popup":{},"multipart":{},"code":{"copyButtons":true},"hide-element":{"elements":[".gitbook-link"]},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"favicon":{"shortcut":"assets/favicon.ico","bookmark":"assets/favicon.ico","appleTouch":"assets/favicon.ico","appleTouchMore":{"120x120":"assets/favicon.ico","180x180":"assets/favicon.ico"}},"page-toc-button":{"maxTocDepth":2,"minTocSize":2},"back-to-top-button":{},"pageview-count":{},"alerts":{},"ancre-navigation":{"associatedWithSummary":true,"float":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showLevel":true},"sharing":{"qq":true,"all":["douban","facebook","google","instapaper","linkedin","twitter","weibo","messenger","qq","qzone","viber","whatsapp"],"douban":true,"facebook":true,"weibo":true,"twitter":true,"pocket":true,"google":true,"qzone":true},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"insert-logo":{"style":"background: none;width: 50px;height: 50px;border-radius: 100%;","url":"https://lh3.googleusercontent.com/a-/AOh14GiYt6d7cl1R6_ftyLEdumKc_jDqrG_SluYu4OqQ=s192-c-rg-br100"},"expandable-chapters":{}},"theme":"default","author":"deng.yanwen","pdf":{"pageBreaksBefore":"/","headerTemplate":null,"paperSize":"a4","margin":{"right":62,"left":62,"top":36,"bottom":36},"fontSize":12,"fontFamily":"Arial","footerTemplate":null,"chapterMark":"pagebreak","pageNumbers":true},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"isbn":"","variables":{},"title":"GitBook","language":"zh-hans","links":{"sharing":{"all":null,"facebook":null,"google":null,"twitter":null,"weibo":null},"sidebar":{"谷歌":"https://www.google.com"}},"gitbook":"*","description":"This is record sharing by deng.yanwen","extension":null},"file":{"path":"日常总结/00.md","mtime":"2021-01-11T03:17:48.332Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-02-01T02:28:42.712Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"XSS&&CSRF","level":"2.3.13","depth":2,"previous":{"title":"性能优化","level":"2.3.12","depth":2,"path":"日常总结/11_性能优化.md","ref":"日常总结/11_性能优化.md","articles":[]},"dir":"ltr"},"config":{"plugins":["favicon","github","expandable-chapters","hide-element","code","back-to-top-button","chapter-fold","splitter","-lunr","-search","search-pro","insert-logo","pageview-count","tbfed-pagefooter","popup","-sharing","sharing-plus","multipart","page-toc-button","ancre-navigation","alerts"],"styles":{"website":"assets/styles/website.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright © 晨希 2021","modify_label":"该文章修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"chapter-fold":{},"github":{"url":"https://github.com/Dyanwen"},"splitter":{},"search-pro":{},"sharing-plus":{"qq":false,"all":["facebook","google","twitter","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":true,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"popup":{},"multipart":{},"code":{"copyButtons":true},"hide-element":{"elements":[".gitbook-link"]},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"favicon":{"shortcut":"assets/favicon.ico","bookmark":"assets/favicon.ico","appleTouch":"assets/favicon.ico","appleTouchMore":{"120x120":"assets/favicon.ico","180x180":"assets/favicon.ico"}},"page-toc-button":{"maxTocDepth":2,"minTocSize":2},"back-to-top-button":{},"pageview-count":{},"alerts":{},"ancre-navigation":{"associatedWithSummary":true,"float":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showLevel":true},"sharing":{"qq":true,"all":["douban","facebook","google","instapaper","linkedin","twitter","weibo","messenger","qq","qzone","viber","whatsapp"],"douban":true,"facebook":true,"weibo":true,"twitter":true,"pocket":true,"google":true,"qzone":true},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"insert-logo":{"style":"background: none;width: 50px;height: 50px;border-radius: 100%;","url":"https://lh3.googleusercontent.com/a-/AOh14GiYt6d7cl1R6_ftyLEdumKc_jDqrG_SluYu4OqQ=s192-c-rg-br100"},"expandable-chapters":{}},"theme":"default","author":"deng.yanwen","pdf":{"pageBreaksBefore":"/","headerTemplate":null,"paperSize":"a4","margin":{"right":62,"left":62,"top":36,"bottom":36},"fontSize":12,"fontFamily":"Arial","footerTemplate":null,"chapterMark":"pagebreak","pageNumbers":true},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"isbn":"","variables":{},"title":"GitBook","language":"zh-hans","links":{"sharing":{"all":null,"facebook":null,"google":null,"twitter":null,"weibo":null},"sidebar":{"谷歌":"https://www.google.com"}},"gitbook":"*","description":"This is record sharing by deng.yanwen","extension":null},"file":{"path":"日常总结/12_XSS&&CSRF.md","mtime":"2021-02-01T02:41:24.237Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-02-01T02:44:50.302Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
