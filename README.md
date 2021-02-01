@@ -1,4 +1,4 @@
-# 晨希-整理目录
+晨希-整理目录
 
 - [JavaScript 核心原理解析](JavaScript核心原理解析/README.md)
 - [图解 Google V8](图解GoogleV8/README.md)
@@ -42,3 +42,7 @@
 - [x] 02 | var x = y = 100：声明语句与语法改变了JavaScript语言核心性质
 - [x] 03 | a.x = a = {n/2}：一道被无数人无数次地解释过的经典面试题
 - [x] 04 | export default function() {}：你无法导出一个匿名函数表达式
+
+## 2022.01.122
+
+- [ ] 
