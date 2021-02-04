@@ -2,11 +2,11 @@
 
 - [介绍](README.md)
 
-- [JavaScript 核心原理解析](JavaScript核心原理解析/README.md)
+- [JavaScript 核心原理](JavaScript核心原理/README.md)
 
-  - [开篇词 | 如何解决语言问题？](JavaScript核心原理解析/00.md)
-  - [01 | delete 0：JavaScript 中到底有什么是可以销毁的](JavaScript核心原理解析/01.md)
-  - [实现数组扁平化的6种方式](JavaScript核心原理解析/09_实现数组扁平化的6种方式.md)
+  - [开篇词 | 如何解决语言问题？](JavaScript核心原理/00.md)
+  - [01 | delete 0：JavaScript 中到底有什么是可以销毁的](JavaScript核心原理/01.md)
+  - [实现数组扁平化的 6 种方式](JavaScript核心原理/09_实现数组扁平化的6种方式.md)
 
 - [图解 GoogleV8](图解GoogleV8/README.md)
 
