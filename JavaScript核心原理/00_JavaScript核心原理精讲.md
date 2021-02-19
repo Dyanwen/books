@@ -121,6 +121,7 @@ console.log(person5.getFriends());
 ```
 
 ## 第六种：寄生组合式继承
+
 > 减少了构造次数，减少了性能的开销
 
 ```js
@@ -295,3 +296,7 @@ function flatten(arr) {
 }
 flatten(arr);
 ```
+
+# 10 | 数组排序（上）：如何用 JS 实现各种数组排序？
+
+![图片](/images/10-1.png)
