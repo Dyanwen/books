@@ -3,7 +3,7 @@ echo "开始了哦..."
 git pull
 git add .
 git commit -m $1
-git push
+git push -u
 echo "提交完成"
 
 git clone -b gh-pages https://github.com/Dyanwen/books.git book_end
