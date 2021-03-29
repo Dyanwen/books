@@ -49,7 +49,7 @@ console.log(array1);    // [1, 4, 21, 30, 100000]
 `compareFunction(a, b)` 必须总是对相同的输入返回相同的比较结果，否则排序的结果将是不确定的。
 
 ## sort 方法的底层实现
-```
+```js
 utils.InstallFunctions(GlobalArray.prototype, DONT_ENUM, [
   ...
   "sort", getFunction("sort", ArraySort),
