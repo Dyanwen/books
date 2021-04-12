@@ -1,7 +1,11 @@
 ## React
 
 - [x] [合成事件](https://juejin.cn/post/6844903988794671117)
-- [ ] [virtual dom](https://segmentfault.com/a/1190000019994425)
+- [x] [virtual dom](https://segmentfault.com/a/1190000019994425)
+    1. 先比较是否为字符串，如果不同直接替换
+    2. 看是否同一标签，并且key形同
+        2.1 新旧节点一方有值，计算props，比较props
+    3. 如果不满足2，则直接替换
 - [ ] [setState过程](https://juejin.cn/post/6844903781813993486)
 - [ ] [fiber](https://zhuanlan.zhihu.com/p/57346388)
 - [ ] [高阶组件](https://zhuanlan.zhihu.com/p/24776678)

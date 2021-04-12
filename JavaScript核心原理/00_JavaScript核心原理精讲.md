@@ -164,6 +164,68 @@ console.log(person6.getName());
 console.log(person6.getFriends());
 ```
 
+# 04 | 继承进阶：如何实现 new、apply、call、bind 的底层逻辑？
+
+`new` 关键字执行之后总是会返回一个对象，要么是实例对象，要么是 `return` 语句指定的对象
+`new` 的执行过程：
+
+- 创建一个新对象
+- 将当前对象的**proto**指向构造函数的 prototype
+- 绑定 this
+- 返回当前对象
+  `call` && `apply` && `bind`
+  `call` 和 `apply` 的区别在于第二个参数的传递，`call` 接受的直接就是参数名称，而 `apply` 接受的确实一个参数数组，`call` 和 `apply` 都是在调用的时候直接执行的
+  `bind` 也可以改变 `this` 的指向，但是执行完 `bind` 之后并不是立即执行的
+
+```js
+function _new(ctor, ...args) {
+  if (typeof ctor !== "function") {
+    throw "ctor must be a function";
+  }
+  let obj = new Object();
+  obj.__proto__ = Object.create(ctor.prototype);
+  let res = ctor.apply(obj, [...args]);
+  let isObject = typeof res === "object" && res !== "null";
+  let isFunction = typeof res === "functioin";
+  return isObject || isFunction ? res : obj;
+}
+
+Function.prototype.call = function (context, ...args) {
+  let context = context || window;
+  context.fn = this;
+  let result = context.fn(...args);
+  Reflect.deleteProperty(context, fn);
+  return result;
+};
+
+Function.prototype.apply = function (context, agrs) {
+  let context = contect || window;
+  context.fn = this;
+  let result = context.fn(...args); //它使用与调用者相同的权限来执行代码
+  Reflect.deleteProperty(context.fn);
+  return result;
+};
+
+Function.prototype.bind1 = function (context, ...args) {
+  if (typeof this !== "function") {
+    throw new Error("this must be a function");
+  }
+  let self = this;
+  let fbound = function () {
+    self.apply(
+      this instanceof self ? this : context,
+      args.concat(Array.prototype.slice.call(arguments))
+    );
+  };
+  if (this.prototype) {
+    fbound.prototype = Object.create(this.prototype);
+  }
+  return fbound;
+};
+```
+
+
+# 05 | 函数那些事：JS 闭包难点剖析
 # 07 | 数组原理（上）：帮你梳理眼花缭乱的数组 API
 
 ## Array 的判断
