@@ -60,7 +60,7 @@
 
 减少页面的重排
 
-![性能优化](./images/2-1.png)
+![性能优化](./images/2-1.png) 
 
 # 03 | 案例分析：移动端 M 站性能优化落地注意事项
 
@@ -78,3 +78,12 @@
 - 卡顿指标采集
 FPS（每秒显示帧数）
 
+# 06 | 工具实践：性能 SDK 及上报策略设计
+# 07 | 平台实践：如何从 0 到 1 搭建前端性能平台
+
+- 开启DNS预解析功能
+
+```
+<meta http-equiv="x-dns-prefetch-control" content="on" />
+<link rel="dns-prefetch" href="https://s.google.com/" >
+```
