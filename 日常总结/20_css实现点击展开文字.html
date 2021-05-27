@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        html,
+        body {
+            height: 100%;
+        }
+
+        .wrap {
+            display: flex;
+        }
+
+        .text {
+            width: 400px;
+            border: 1px solid #e5e5e5;
+            box-shadow: 4px 5px 10px #888888;
+            padding: 20px 20px 0px;
+            line-height: 25px;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+
+        .text::before {
+            content: '';
+            float: right;
+            width: 0px;
+            height: calc(100% - 24px);
+            /*先随便设置一个高度*/
+            background: transparent
+        }
+
+        .btn {
+            float: right;
+            line-height: 24px;
+            color: #fff;
+            clear: both;
+            background-color: violet;
+            border: none;
+        }
+
+        .exp:checked+.text {
+            -webkit-line-clamp: 999;
+            /*设置一个足够大的行数就可以了*/
+        }
+
+        .btn::after {
+            content: '展开'
+                /*采用content生成*/
+        }
+        .exp:checked+.text .btn::after{
+  content:'收起'
+}
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <input type="checkbox" id="exp">
+        <div class="text">
+            <label class="btn" for="exp">展开</label>
+            浮动元素是如何定位的
+            正如我们前面提到的那样，当一个元素浮动之后，它会被移出正常的文档流，然后向左或者向右平移，一直平移直到碰到了所处的容器的边框，或者碰到另外一个浮动的元素。
+        </div>
+    </div>
+
+</body>
+
+</html>
