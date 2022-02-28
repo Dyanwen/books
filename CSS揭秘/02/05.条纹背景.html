@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 100px;
+            height: 400px;
+            float: left;
+            margin-right: 20px;
+            margin-bottom: 20px;
+        }
+
+        .d1 {
+            background: linear-gradient(#fb3 33.3%, #58a 0, #58a 66.6%, yellowgreen 0);
+            background-size: 100% 30px;
+        }
+
+        .d2 {
+            background: linear-gradient(to right, #fb3 50%, #58e 0);
+            background-size: 30px 100%;
+        }
+
+        .d3 {
+            /*background: linear-gradient(45deg, #fb3 50%, #58e 0);*/
+            background: linear-gradient(45deg, #fb3 25%, #58a 0, #58a 50%, #fb3 0, #fb3 75%, #58a 0);
+            background-size: 42.426406871px 42.426406871px;
+        }
+
+        .d4 {
+            background: repeating-linear-gradient(60deg, #fb3, #58a 30px);
+        }
+
+        .d5 {
+            background: repeating-linear-gradient(45deg,
+                    #fb3, #fb3 15px, #58a 0, #58a 30px);
+        }
+
+        .d6 {
+            background: repeating-linear-gradient(45deg, #79b, #79b 15px, #58a 0, #58a 30px);
+        }
+
+        .d7 {
+            /*相当于两个连续的色标具有相同的颜色和不 同的位置*/
+            background: repeating-linear-gradient(45deg, #79b 0 15px, #58a 0 30px);
+        }
+
+        .d8 {
+            background: #58a;
+            background-image: repeating-linear-gradient(30deg, hsla(0, 0%, 100%, .2) 0 15px, transparent 0 30px);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="d1"></div>
+    <div class="d2"></div>
+    <div class="d3"></div>
+    <div class="d4"></div>
+    <div class="d5"></div>
+    <div class="d6"></div>
+    <div class="d7"></div>
+    <div class="d8"></div>
+</body>
+
+</html>

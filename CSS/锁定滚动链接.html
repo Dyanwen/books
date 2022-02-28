@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root {
+            --actions-width: 90px;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .wrap {
+            height: 1500px;
+            font-size: 90px;
+            scrollbar-gutter: stable;
+            word-wrap: break-word;
+        }
+
+        .modal__content {
+            position: fixed;
+            bottom: 0;
+            max-width: calc(100% - var(--actions-width, 70px));
+            height: 50%;
+            background-color: rebeccapurple;
+            font-size: 40px;
+            overscroll-behavior-y: contain;
+            overflow-y: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <button>按钮</button>
+        afdasfsdfafdasfsdfafdasfsdfafdasfsdfafdasfsdfafdasfsdfafdasfsdfafdasfsdfafdasfsdfafdasfsdfafdasfsdfafdasfsdf
+        <div class="modal__content">
+            afdasfsdfafdasfsdfafdasfsdfafdasfsdfafdasfsdfafdasfsdfafdasfsdfafdasfsdfafdasfsdfafdasfsdfafdasfsdfafdasfsdf
+        </div>
+    </div>
+</body>
+
+</html>
