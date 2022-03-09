@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .pie {
+            overflow: hidden;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background-color: aquamarine;
+            background-image: linear-gradient(to right, transparent 50%, #655 0);
+        }
+
+        .pie::before {
+            content: '';
+            display: block;
+            margin-left: 50%;
+            height: 100%;
+            border-radius: 0 100% 100% 0 / 50%;
+            background-color: inherit;
+            transform-origin: left;
+            animation: spin 3s linear infinite, bg 6s step-end infinite;
+        }
+
+        @keyframes spin {
+            to {
+                transform: rotate(.5turn);
+            }
+        }
+
+        @keyframes bg {
+            50% {
+                background: #655;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="pie"></div>
+    <div class="pie" HTML style="animation-delay: -20s"></div>
+</body>
+
+</html>

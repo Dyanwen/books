@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <title>Document</title>
+    <style>
+        .pie {
+            display: inline-block;
+            margin-right: 20px;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background: conic-gradient(#655 40%, yellowgreen 0);
+        }
+
+        svg {
+            width: 100px;
+            height: 100px;
+            transform: rotate(-90deg);
+            background: yellowgreen;
+            border-radius: 50%;
+        }
+
+        circle {
+            fill: yellowgreen;
+            stroke: #655;
+            stroke-width: 32;
+            /* 可得到比率为38%的扇区 */
+        }
+
+        .pil {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background: conic-gradient(#655 40%, yellowgreen 0);
+        }
+
+        .pil1 {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background: conic-gradient(deeppink 20%, #fb3 0, #fb3 30%, yellowgreen 0);
+        }
+
+        .pil1::before {
+            content: attr(data-value);
+            background-color: att人(data-background);
+        }
+
+        /*attr()只能用在伪元素的content中*/
+    </style>
+</head>
+
+<body>
+    <div class="pie">20%</div>
+    <div class="pie">50%</div>
+    <div class="pie">60%</div>
+    <div class="pie">80%</div>
+    <div class="pie">101%</div>
+    <div class="pil"></div>
+    <div class="pil1" data-value="30" data-background="lime"></div>
+</body>
+<script>
+    $('.pie').each((i, pie) => {
+        var p = parseFloat(pie.textContent);
+        var NS = "http://www.w3.org/2000/svg";
+        var svg = document.createElementNS(NS, "svg");
+        var circle = document.createElementNS(NS, "circle");
+        var title = document.createElementNS(NS, "title");
+        circle.setAttribute("r", 16);
+        circle.setAttribute("cx", 16);
+        circle.setAttribute("cy", 16);
+        circle.setAttribute("stroke-dasharray", p + " 100");
+        svg.setAttribute("viewBox", "0 0 32 32");
+        title.textContent = pie.textContent;
+        pie.textContent = '';
+        svg.appendChild(title);
+        svg.appendChild(circle);
+        pie.appendChild(svg);
+    })
+</script>
+
+</html>

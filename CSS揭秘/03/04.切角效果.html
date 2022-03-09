@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 200px;
+            padding: 10px;
+            margin-top: 20px;
+            background: #58a;
+        }
+
+        .item1 {
+            background: linear-gradient(-45deg, transparent 15px, #58a 0);
+        }
+
+        .item2 {
+            background:
+                linear-gradient(-45deg, transparent 15px, #58a 0) right,
+                linear-gradient(45deg, transparent 15px, #655 0) left;
+            background-size: 50% 100%;
+            background-repeat: no-repeat;
+        }
+
+        .item3 {
+            background:
+                linear-gradient(135deg, transparent 15px, #58a 0) top left,
+                linear-gradient(-135deg, transparent 15px, #58a 0) top right,
+                linear-gradient(-45deg, transparent 15px, #58a 0) bottom right,
+                linear-gradient(45deg, transparent 15px, #58a 0) bottom left;
+            background-size: 50% 50%;
+            background-repeat: no-repeat;
+        }
+
+        .item4 {
+            background:
+                radial-gradient(circle at top left, transparent 10px, #58a 0) top left,
+                radial-gradient(circle at top right, transparent 10px, #58a 0) top right,
+                radial-gradient(circle at bottom right, transparent 10px, #58a 0) bottom right,
+                radial-gradient(circle at bottom left, transparent 10px, #58a 0) bottom left;
+            background-size: 50% 50%;
+            background-repeat: no-repeat;
+        }
+
+        .item5 {
+            border: 20px solid transparent;
+            border-image: 1 url('data:image/svg+xml,\
+ <svg xmlns="http://www.w3.org/2000/svg"\
+ width="3" height="3" fill="%2357a">\
+ <polygon points="0,1 1,0 2,0 3,1 3,2 2,3 1,3 0,2"/>\
+ </svg>');
+            background: #58a;
+            background-clip: padding-box;
+        }
+
+        .item6 {
+            background-color: #58a;
+            clip-path: polygon(10px 0, calc(100% - 10px) 0, 100% 10px,
+                    100% calc(100% - 10px), calc(100% - 10px) 100%,
+                    10px 100%, 0 calc(100% - 10px), 0 10px);
+        }
+
+        .item7 {
+            border-radius: 15px;
+            border-corner-shape: scoop;
+
+            filter: drop-shadow(2px 2px 10px rgba(0, 0, 0, .5));
+        }
+    </style>
+</head>
+
+<body>
+    <div class="item1">绿阵连烟垠，风雨化精节。玉露含青紫，沁彻哲人心。</div>
+    <div class="item2">绿阵连烟垠，风雨化精节。玉露含青紫，沁彻哲人心。</div>
+    <div class="item3">绿阵连烟垠，风雨化精节。玉露含青紫，沁彻哲人心。</div>
+    <div class="item4">绿阵连烟垠，风雨化精节。玉露含青紫，沁彻哲人心。</div>
+    <div class="item5">绿阵连烟垠，风雨化精节。玉露含青紫，沁彻哲人心。</div>
+    <div class="item6">绿阵连烟垠，风雨化精节。玉露含青紫，沁彻哲人心。</div>
+    <div class="item7">绿阵连烟垠，风雨化精节。玉露含青紫，沁彻哲人心。</div>
+</body>
+
+</html>

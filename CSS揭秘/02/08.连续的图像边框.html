@@ -9,23 +9,65 @@
     <style>
         div {
             margin: 0 20px 20px 0;
-            width: 400px;
+            width: 300px;
             height: 100px;
         }
 
         .d1 {
-            background: hsl(20, 40%, 90%);
-            background-image:
-                linear-gradient(90deg, #fb3 10px, transparent 0),
-                linear-gradient(90deg, #ab4 20px, transparent 0),
-                linear-gradient(90deg, #655 20px, transparent 0);
-            background-size: 41px 100%, 61px 100%, 83px 100%;
+            padding: 1em;
+            border: 16px solid transparent;
+            background:
+                linear-gradient(#fff, #fff) padding-box,
+                repeating-linear-gradient(-45deg,
+                    red 0, red 12.5%,
+                    transparent 0, transparent 25%,
+                    #58a 0, #58a 37.5%,
+                    transparent 0, transparent 50%) 0/5em 5em;
+        }
+
+        /*我们不能在 border-image-slice 属性中使用 em 单位，只能把边框厚度指定为像素单位*/
+        .d2 {
+            padding: 1em;
+            border: 16px solid transparent;
+            border-image: 16 repeating-linear-gradient(-45deg,
+                    red 0, red 1em,
+                    transparent 0, transparent 2em,
+                    #58a 0, #58a 3em,
+                    transparent 0, transparent 4em);
+        }
+
+        @keyframes ants {
+            to {
+                background-position: 100%
+            }
+        }
+
+        .marching-ants {
+            padding: 1em;
+            border: 3px solid transparent;
+            background:
+                linear-gradient(white, white) padding-box,
+                repeating-linear-gradient(-45deg,
+                    black 0, black 25%, white 0, white 50%) 0 / .6em .6em;
+            animation: ants 12s linear infinite;
+        }
+
+        .d3 {
+            color: red;
+            border-top: .2em solid transparent;
+            border-image: 100% 0 0 linear-gradient(90deg,
+                    currentColor 4em,
+                    transparent 0);
+            padding-top: 1em;
         }
     </style>
 </head>
 
 <body>
     <div class="d1"></div>
+    <div class="d2"></div>
+    <div class="marching-ants"></div>
+    <div class="d3">哈哈哈哈哈哈哈哈哈哈哈</div>
 </body>
 
 </html>

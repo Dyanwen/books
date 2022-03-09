@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            display: inline-block;
+            width: 100px;
+            height: 100px;
+            background-color: #fff;
+            margin: 20px;
+        }
+
+        .item1 {
+            box-shadow: 2px 2px 10px 5px #000,
+                -2px -2px 10px 5px #000;
+        }
+
+        .item2 {
+            filter: drop-shadow(2px 2px 10px #000);
+        }
+
+        .item3 {
+            border: 2px dotted blue;
+            filter: url(drop-shadow.svg#drop-shadow);
+            filter: drop-shadow(2px 2px 10px rgba(0, 0, 0, .5));
+        }
+
+        .item4 {
+            color: deeppink;
+            border: 2px solid;
+            text-shadow: .1em .2em yellow;
+            filter: drop-shadow(1px 1px 2px blue);
+        }
+        /*
+        * drop-shadow并不会影响text-shadow
+        */
+    </style>
+</head>
+
+<body>
+    <div class="item1"></div>
+    <div class="item2"></div>
+    <div class="item3"></div>
+    <div class="item4">text-shadow</div>
+</body>
+
+</html>
