@@ -16,9 +16,25 @@
         }
 
         main {
+            position: relative;
+            overflow: hidden;
             padding: 30px;
             width: 500px;
             background: hsla(0, 0%, 100%, .3);
+        }
+
+        main::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            filter: blur(20px);
+            margin: -20px;
+            background: url('https://rumenz.com/static/cimg/img/demo2.jpg') 0 / cover fixed;
+            z-index: -1;
+            /* 仅用于调试 */
         }
     </style>
 </head>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 130px;
+            height: 130px;
+            text-align: center;
+            line-height: 130px;
+            background-color: aqua;
+            margin: 20px;
+        }
+
+        .i1 {
+            border: 10px solid transparent;
+            background-clip: padding-box;
+            box-shadow: 0 0 0 1px #000 inset, 0 .1em .2em -.05em rgba(0, 0, 0, .5);
+            cursor: pointer;
+        }
+
+        .i2 {
+            position: relative;
+            cursor: pointer;
+        }
+
+        .i2::after {
+            content: '';
+            position: absolute;
+            top: -10px;
+            right: -10px;
+            bottom: -10px;
+            left: -10px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="i1">按钮</div>
+    <div class="i2">按钮</div>
+</body>
+
+</html>

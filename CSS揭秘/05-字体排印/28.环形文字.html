@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <title>Document</title>
+    <style>
+        .circular path {
+            fill: none;
+        }
+
+        .circular {
+            width: 200px;
+            height: 200px;
+            margin: 50px;
+        }
+
+        .circular svg {
+            display: block;
+            overflow: visible;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="circular">
+        <svg viewBox="0 0 100 100">
+            <path d="M 0,50 a 50,50 0 1,1 0,1 z" id="circle" />
+            <text>
+                <textPath xlink:href="#circle">
+                    circular reasoning works becausebecausebecausebecause
+                </textPath>
+            </text>
+        </svg>
+    </div>
+    <div class="circular">
+        circular reasoning works because
+    </div>
+</body>
+<script>
+    $('.circular').each(function (i, el) {
+        var NS = "http://www.w3.org/2000/svg";
+        var xlinkNS = "http://www.w3.org/1999/xlink";
+        var svg = document.createElementNS(NS, "svg");
+        var circle = document.createElementNS(NS, "path");
+        var text = document.createElementNS(NS, "text");
+        var textPath = document.createElementNS(NS, "textPath"); svg.setAttribute("viewBox", "0 0 100 100");
+        circle.setAttribute("d", "M0,50 a50,50 0 1,1 0,1z");
+        circle.setAttribute("id", "circle");
+        textPath.textContent = el.textContent;
+        textPath.setAttributeNS(xlinkNS, "xlink:href", "#circle");
+        text.appendChild(textPath);
+        svg.appendChild(circle);
+        svg.appendChild(text);
+        el.textContent = '';
+        el.appendChild(svg);
+    });
+
+</script>
+
+</html>
