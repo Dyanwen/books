@@ -4,4 +4,4 @@
 - [图解 Google V8](图解GoogleV8/README.md)
 - [常用工具](常用工具/README.md)
 - [日常总结](日常总结/README.md)
-- [LeetCode](Leetcode/readme.md)
+- [LeetCode](算法/Leetcode/readme.md)
