@@ -5,43 +5,44 @@
  */
 
 // @lc code=start
-/**
- * @param {number} k
- * @param {number[]} nums
- */
+
 var KthLargest = function (k, nums) {
+    for (let j = 0; j < nums.length - 1; j++) {
+        for (let i = 0; i < nums.length - 1; i++) {
+            if (nums[i] > nums[i + 1]) {
+                [nums[i], nums[i + 1]] = [nums[i + 1], nums[i]]
+            }
+        }
+    }
+    this.k = k
+    this.nums = nums
 
 };
 
-/** 
- * @param {number} val
- * @return {number}
- */
 KthLargest.prototype.add = function (val) {
-
+    this.nums.push(val)
+    let insertIndex = this.nums.length - 2
+    while (insertIndex >= 0 && this.nums[insertIndex] > val) {
+        this.nums[insertIndex + 1] = this.nums[insertIndex]
+        insertIndex--
+    }
+    this.nums[insertIndex + 1] = val
+    return this.nums[this.nums.length - this.k]
 };
 
-class MinHeap {
-    constructor(data = []) {
-        this.data = data
 
-    }
-    bubbleUp(i) { }
-    bubbleDown(i){}
-    comparator(a, b) {
-        return a - b
-    }
-    peek() {//返回栈顶元素
-        if (!this.size()) return null;
-        return this.data[0]
-    }
-    swap(i1, i2) {
-        [this.data[i1], this.data[i2]] = [this.data[i2], this.data[i1]]
-    }
-    size() {
-        return this.data.size
-    }
-}
+// var KthLargest = function (k, nums) {
+//     this.nums = nums.sort((a, b) => b - a)
+//     this.k = k
+
+// };
+
+// KthLargest.prototype.add = function (val) {
+//     this.nums.push(val)
+//     return this.nums.sort((a, b) => b - a)[this.k - 1]
+// };
+
+
 
 /**
  * Your KthLargest object will be instantiated and called as such:
