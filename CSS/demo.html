@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .wrap {
+            overflow: hidden;
+            white-space: nowrap;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        .l,.r {
+            display: flex;
+            flex-direction: row;
+            overflow: hidden;
+            word-break: keep-all;
+            white-space: nowrap;
+        }
+
+        .l {
+            flex: 1 1 auto;
+        }
+
+        .r {
+            justify-content: right;
+        }
+
+        .l1 {
+            flex: 0 1 auto;
+            word-break: keep-all;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        span {
+            overflow: hidden;
+            flex: 0 0 auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="l">
+            <span class="l1">sdhfjkahsdfkahsdfkasd的发送到发定时发送到发</span>
+            <span>33</span>
+        </div>
+        <div class="r">
+            <span>eeee</span>
+            <span>444</span>
+        </div>
+    </div>
+    <div class="wrap">
+        <div class="l">
+            <span class="l1">title</span>
+            <span>subtit</span>
+        </div>
+        <div class="r">
+            <span>m</span>
+            <span>444</span>
+        </div>
+    </div>
+</body>
+
+</html>
