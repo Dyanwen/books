@@ -1,14 +1,13 @@
 /**
- * instance && typeof
- * 1.可以准确的判断复杂引用数据类型,不能判断基本数据类型
+ * 1.instance可以准确的判断复杂引用数据类型,不能判断基本数据类型
  * 2.typeof 可以判断基本数据类型,但是在引用类型中,除了function类型之外,其他的都不能判断
  */
-// const getInstance = (l, r) => {
-//     if (typeof l !== 'object' || l == null) return false
-//     let proto = Object.getPrototypeOf(l);
+// const getInstance = (left, right) => {
+//     if (typeof left !== 'object' || left === null) return false
+//     let proto = Object.getPrototypeOf(left)
 //     while (true) {
-//         if (proto == null) return false
-//         if (proto == r.prototype) return true
+//         if (proto === null) return false
+//         if (proto === right.prototype) return true
 //         proto = Object.getPrototypeOf(proto)
 //     }
 // }
@@ -18,7 +17,7 @@
 //     if (t !== 'object') {
 //         return t;
 //     }
-//     // return Object.prototype.toString.call(n).replace(/^.{8}(\S+)\]$/, (_, $1) => $1.toLowerCase());
+//    // return Object.prototype.toString.call(n).replace(/^.{8}(\S+)\]$/, (_, $1) => $1.toLowerCase());
 //     return Object.prototype.toString.call(n).replace(/^\[object (\S+)\]$/, '$1');
 // }
 
